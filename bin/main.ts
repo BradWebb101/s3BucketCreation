@@ -8,9 +8,9 @@ const app = new cdk.App();
 
 const GLOBALS = {
     bucket: 'exampleClient',
-    arns:['arn:aws:iam::437467121379:group/developer'],
-    snowflake:'arn:aws:iam::437467121379:group/developer1',
-    lambda:'arn:aws:lambda:ap-southeast-2:437467121379:function:portfoliowebsite'
+    arns:['ARN1'],
+    snowflake:'ARN1',
+    lambda:'ARN1'
 };
 
 const bucketStack = new BucketStack(app, 'BucketStack', {
