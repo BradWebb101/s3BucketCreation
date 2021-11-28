@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project!
+# AWS s3 Bucket creation template
 
-This is a blank project for TypeScript development with CDK.
+This is a boiler plate template for setting up a s3 bucket, with lambda triggers and a SQS que and SNS topic. Being used for a project, with Snowflake and custom bucket permissions. 
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+# How to delpoy
 
-## Useful commands
+To check the code is correct, you need to have the AWS CDK installed. 
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+'cdk synth'
+
+To deploy 
+
+'cdk deploy'
