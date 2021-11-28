@@ -1,0 +1,429 @@
+{
+  "version": "15.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "BucketStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "BucketStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/BucketStack/bucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketNotifications2CB09E7A",
+            "trace": [
+              "BucketNotifications.createResourceOnce (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:116:23)",
+              "BucketNotifications.addNotification (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:54:27)",
+              "Bucket.addEventNotification (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:339:24)",
+              "S3EventSource.bind (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:22:19)",
+              "Import.addEventSource (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:217:12)",
+              "new BucketStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/BucketStack.ts:96:29)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:18:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/BucketStack/bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucket43879C71",
+            "trace": [
+              "new Bucket (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:758:22)",
+              "new BucketStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/BucketStack.ts:17:19)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:18:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/BucketStack/bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketPolicy638F945D",
+            "trace": [
+              "new BucketPolicy (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.ts:30:21)",
+              "Bucket.addToResourcePolicy (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:228:21)",
+              "new BucketStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/BucketStack.ts:24:19)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:18:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/BucketStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC",
+            "trace": [
+              "new Role (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new NotificationsResourceHandler (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:61:17)",
+              "Function.singleton (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:41:16)",
+              "BucketNotifications.createResourceOnce (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:105:52)",
+              "BucketNotifications.addNotification (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:54:27)",
+              "Bucket.addEventNotification (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:339:24)",
+              "S3EventSource.bind (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:22:19)",
+              "Import.addEventSource (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:217:12)",
+              "new BucketStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/BucketStack.ts:96:29)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:18:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/BucketStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36",
+            "trace": [
+              "new Policy (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Role.addToPolicy (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-iam/lib/role.ts:244:17)",
+              "new NotificationsResourceHandler (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:68:15)",
+              "Function.singleton (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:41:16)",
+              "BucketNotifications.createResourceOnce (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:105:52)",
+              "BucketNotifications.addNotification (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:54:27)",
+              "Bucket.addEventNotification (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:339:24)",
+              "S3EventSource.bind (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:22:19)",
+              "Import.addEventSource (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:217:12)",
+              "new BucketStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/BucketStack.ts:96:29)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:18:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/BucketStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691",
+            "trace": [
+              "new NotificationsResourceHandler (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:83:22)",
+              "Function.singleton (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:41:16)",
+              "BucketNotifications.createResourceOnce (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:105:52)",
+              "BucketNotifications.addNotification (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:54:27)",
+              "Bucket.addEventNotification (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:339:24)",
+              "S3EventSource.bind (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:22:19)",
+              "Import.addEventSource (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:217:12)",
+              "new BucketStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/BucketStack.ts:96:29)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:18:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/BucketStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/BucketStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "BucketStack"
+    },
+    "SQSStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SQSStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/SQSStack/SQSQueName/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SQSQueNameCEF1B978",
+            "trace": [
+              "new Queue (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-sqs/lib/queue.ts:178:19)",
+              "new SQSStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/SQSStack.ts:14:19)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:22:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SQSStack/SQSQueName/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SQSQueNamePolicyC1A74382",
+            "trace": [
+              "new QueuePolicy (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-sqs/lib/policy.ts:24:22)",
+              "Queue.addToResourcePolicy (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-sqs/lib/queue-base.ts:65:21)",
+              "SqsSubscription.bind (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-sns-subscriptions/lib/sqs.ts:33:16)",
+              "Topic.addSubscription (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-sns/lib/topic-base.ts:44:45)",
+              "new SQSStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/SQSStack.ts:20:11)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:22:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SQSStack/SQSQueName/SQSStackSNSTopicName228A748A/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SQSQueNameSQSStackSNSTopicName228A748A8B1E4CA7",
+            "trace": [
+              "new Subscription (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-sns/lib/subscription.ts:84:5)",
+              "Topic.addSubscription (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-sns/lib/topic-base.ts:58:5)",
+              "new SQSStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/SQSStack.ts:20:11)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:22:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SQSStack/SNSTopicName/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SNSTopicName4B814E6B",
+            "trace": [
+              "new Topic (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/aws-sns/lib/topic.ts:66:22)",
+              "new SQSStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/SQSStack.ts:17:19)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:22:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SQSStack/snsTopicArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "snsTopicArn",
+            "trace": [
+              "new SQSStack (/Users/elhombre/Documents/coding/AWSBucketCreation/lib/SQSStack.ts:23:5)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/bin/main.ts:22:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SQSStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/SQSStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit (/Users/elhombre/Documents/coding/AWSBucketCreation/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "SQSStack"
+    }
+  }
+}
